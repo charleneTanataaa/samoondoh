@@ -5,15 +5,15 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 95vw;
-    height: 95vh;
+    width: 100vw;
+    height: 100vh;
     background-image: url(./background.jpg);
     background-size:auto;
     background-position: center;
     background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 h1{
     text-align: center;
@@ -21,31 +21,37 @@ h1{
     text-shadow: 1px 1px 2px gray;
 }
 #container{
-    margin: auto;
-    min-width: 600px;
-    max-width: 600px;
+    width: 600px;
     padding: 20px;
-    width: 80%;
     background-color: rgba(240, 255, 248, 0.9);
     border:  3px rgb(221, 252, 232) solid;
     border-radius: 20px;
-    text-align: center;
 }
 #up{
     margin: auto;
-    padding: 0;
     max-width: 570px;
     text-align: center;
+    display: block;
 }
-#up h1{
+#title h1{
     padding: 0;
     margin: 0;
 }
-#up p{
+.description{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 13px;
     margin: 10px 0;
 }
+#title{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+#title img{
+    width: 20px;
+    height: 20px;
+}
+
 #main-box{
     display: flex;
     justify-content: center;
@@ -93,10 +99,12 @@ h1{
 
 .image-container:hover .seed{
     opacity: 0;
+    cursor: pointer;
 }
 
 .image-container:hover .flower{
     opacity: 1;
+    cursor: pointer;
 }
 
 .details{
