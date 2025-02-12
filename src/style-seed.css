@@ -21,10 +21,12 @@ h1{
     text-shadow: 1px 1px 2px gray;
 }
 #container{
-    width: 600px;
+    min-width: 200px;
+    max-width: 600px;
+    width: 80%;
     padding: 20px;
-    background-color: rgba(240, 255, 248, 0.9);
-    border:  3px rgb(221, 252, 232) solid;
+    background-color: rgba(249, 229, 206, 0.9);
+    border:  3px rgb(241, 212, 161) solid;
     border-radius: 20px;
 }
 #up{
@@ -127,3 +129,47 @@ h1{
     white-space: nowrap;
 }
 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(50, 50, 50, 0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .modal-content p{
+    margin: 10px;
+    text-align: left;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
