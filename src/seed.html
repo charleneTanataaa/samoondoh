@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seed Menu</title>
     <link rel="stylesheet" href="style-seed.css">
+    <script src="./seed.js"></script>
 </head>
 <body>
     <div id="container">
@@ -16,73 +17,8 @@
             </div>
             <p class="description">Purchase your seeds here! All premium and ready. Don't forget to always water your flower and fertilize it.</p>
         </div>
-        <div id="main-box">
+        <div id="main-box">         
             
-            <div id="rose" class="image-container">
-                    <img class="seed sizing" src="/img/hyacinths-bag.png" alt="">
-                    <img class="flower sizing" src="/img/roses.png" alt="">
-                    <p>Rose</p>
-                    <div class="details">
-                        <img src="/img/bell.png" alt="">
-                        <p>240 bells</p>
-                    </div>
-            </div>
-            <div id="tulip" class="image-container">
-                <img class="seed sizing" src="/img/hyacinths-bag.png" alt="">
-                <img class="flower sizing" src="/img/tulip.png" alt="">
-                <p>Tulip</p>
-                <div class="details">
-                    <img src="/img/bell.png" alt="">
-                    <p>240 bells</p>
-                </div>
-
-            </div>
-            <div id="hyacinth" class="image-container">
-                <img class="seed sizing" src="/img//hyacinths-bag.png" alt="">
-                <img class="flower sizing" src="/img//hyancint.png" alt="">
-                <p>Hyacinth</p>
-                <div class="details">
-                    <img src="/img/bell.png" alt="">
-                    <p>240 bells</p>
-                </div>
-            </div>
-            <div id="cosmos" class="image-container">
-                <img class="seed sizing" src="/img/hyacinths-bag.png" alt="">
-                <img class="flower sizing" src="/img/cosmos.png" alt="">
-                <p>Cosmos</p>
-                <div class="details">
-                    <img src="/img/bell.png" alt="">
-                    <p>240 bells</p>
-                </div>
-            </div>
-            <div id="lily" class="image-container">
-                <img class="seed sizing" src="/img/hyacinths-bag.png" alt="">
-                <img class="flower sizing" src="/img/lilies.png" alt="">
-                <p>Lily</p>
-                <div class="details">
-                    <img src="/img/bell.png" alt="">
-                    <p>240 bells</p>
-                </div>
-            </div>
-            <div id="lily-of-the-valley" class="image-container">
-                <img class="seed sizing" src="/img/hyacinths-bag.png" alt="">
-                <img class="flower sizing" src="/img/lily of the valley.png" alt="">
-                <p>Lily of the Valley</p>
-                <div class="details">
-                    <img src="/img/bell.png" alt="">
-                    <p>240 bells</p>
-                </div>
-            </div>
-            <div id="dandelions" class="image-container">
-                <img class="seed sizing" src="/img/hyacinths-bag.png" alt="">
-                <img class="flower sizing" src="/img/dandelions.png" alt="">
-                <p>Dandelions</p>
-                <div class="details">
-                    <img src="/img/bell.png" alt="">
-                    <p>240 bells</p>
-                </div>
-            </div>
-            <div id="pansies" class="image-container">
                 <img class="seed sizing" src="/img/hyacinths-bag.png" alt="">
                 <img class="flower sizing" src="/img/pansies.png" alt="">
                 <p>Pansies</p>
@@ -90,8 +26,21 @@
                     <img src="/img/bell.png" alt="">
                     <p>240 bells</p>
                 </div>
-            </div>
+            
         </div>
     </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <h2 id="flowerTitle"></h2>
+          <img src="" alt="" id="flowerImage">
+          <p id="flowerDesc"></p>
+          <div class="details">
+            <img src="/img/bell.png" alt="">
+            <p id="flowerPrice"></p>
+          </div>
+        </div>
+      
+      </div>
+    
 </body>
 </html>
